@@ -1,0 +1,14 @@
+<h1>Worker Profile</h1>
+<label>&nbsp;</label>
+<h2>Worker Details: </h2>
+<div class="marketing">
+    <div ng-model="user" ng-repeat="worker in workers.worker">
+        <div class="col-md-6">Name: {{worker.name}}</div>
+        <div class="col-md-6">Location: {{worker.location}}</div>
+        <div class="col-md-6">Preferences: {{worker.pref}}</div>
+        <div class="col-md-6">Experience: {{worker.exp}}</div>
+        <span style="line-height: 1.5;"><hr/></span>
+        <span style="line-height: 1.5;"></span>
+    </div>
+</div>
+<label>&nbsp;</label>

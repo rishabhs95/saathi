@@ -1,0 +1,24 @@
+<h2>Enter Worker's Details</h2>
+<div class="form-group" ng-submit="save()">
+    <div ng-repeat="worker in workers.worker">
+        <div class="form-group">
+            <h3>Worker {{$index}}<a ng-click="removeWorker($index, workers)" class="btn btn-xs btn-danger pull-right">X</a></h3>
+            <label class="control-label col-md-2">Name </label>
+            <input type="text" class="form-control" ng-model="worker.name" placeholder="Name" />
+            <label class="control-label col-md-2">Location </label>
+            <input type="text" class="form-control" ng-model="worker.location" placeholder="Location" />
+            <label class="control-label col-md-12">Job Preference </label>
+            <input type="text" class="form-control" ng-model="worker.pref" placeholder="Job Preference" />
+            <label class="control-label col-md-2">Experience </label>
+            <input type="text" class="form-control" ng-model="worker.exp" placeholder="Experience" />
+            <span style="line-height: 1.5;"><hr/></span>
+            <span style="line-height: 1.5;"></span>
+        </div>
+    </div>
+    <div class="col-md-offset-12">
+        <a ng-click="addWorker()" class="btn btn-success btn-xs">+ Add Worker </a>
+    </div>
+    <button class="btn btn-success">Submit</button>
+    <p>&nbsp;</p>
+    <label>Click on Profile Tab to look available worker details!</label>
+</div>

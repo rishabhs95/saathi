@@ -1,0 +1,20 @@
+<h3>Hire</h3>
+<div class="jumbotron">
+    <h3>
+        Available Workers in a category:
+    </h3>
+    <select>
+        <option ng-repeat="service in services.service" value="{{service.name}}">
+            {{service.name}} ({{service.number}})
+        </option>
+    </select>
+    <h3>
+        Number of Workers you need:
+    </h3>
+    <div class="input-group">
+        <input type="text" class="form-control" placeholder="Enter the number..." aria-describedby="basic-addon2">
+        <span class="input-group-addon" id="basic-addon2">Submit</span>
+    </div>
+</div>
+<label>&nbsp;</label>
+<h4>This sends the request to get workers from NGO</h4>

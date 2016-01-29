@@ -1,0 +1,14 @@
+<h1>NGO Profile</h1>
+<label>&nbsp;</label>
+<h2>NGO Details: </h2>
+<div class="marketing">
+    <div ng-model="user" ng-repeat="ngo in ngos.ngo">
+        <div class="col-md-6">Name: {{ngo.name}}</div>
+        <div class="col-md-6">Location: {{ngo.location}}</div>
+        <div class="col-md-12">Registration Number: {{ngo.regno}}</div>
+        <span style="line-height: 1.5;"><hr/></span>
+        <span style="line-height: 1.5;"></span>
+        <label>&nbsp;</label>
+    </div>
+</div>
+<label>&nbsp;</label>
